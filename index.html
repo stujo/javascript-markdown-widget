@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Markdown Preview</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+    <header class="fixed-top title">Markdown</header>
+    <main class="content-container">
+        <div class="input-container">
+            <textarea class="widget" id="input">Hello *world!*, 
++ I **love** you!
++ I **miss** you!
++ I **can't wait to see** you!
+*What* on **earth** were you thinking???
+</textarea>
+        </div><div class="input-container">
+            <div class="widget" id="preview"></div>
+        </div>
+    </main>
+    <script type="text/javascript">
+    var module = {};
+    </script>
+    <script type="text/javascript" src="./vendor/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="./lib/markdownModel.js"></script>
+    <script type="text/javascript" src="./lib/markdownView.js"></script>
+    <script type="text/javascript" src="./lib/markdownApp.js"></script>
+</body>
+
+</html>
