@@ -83,3 +83,20 @@ header {
   
 }
 
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
