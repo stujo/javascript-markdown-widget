@@ -39,14 +39,23 @@ header {
   margin: 3em auto;
 }
 
-.input-container {
+.column-container {
   padding: 0;
   margin-bottom: 5px;
   border: 0;
+  width: 50%;
+  float: left;
 }
 
+.column-content{
+  padding: 5px;
+  border: 2px solid #666;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #fff;
+}
 
-.input-container .widget {
+.widget {
   box-sizing: border-box;
   display: block;
   margin: 0 auto;
@@ -59,11 +68,18 @@ header {
 }
 
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 720px) {
   .content-container{
     width: 100%;
-    margin: 0;
+    margin: 3em 0;
     padding: 0;
   }
+
+  .column-container{
+    float: none;
+    width: 100%;
+  }
+  
 }
 
